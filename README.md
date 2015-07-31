@@ -13,6 +13,8 @@ This, in mathematical terms, means that there are two numbers μ and λ, such th
 
 ![R.](https://github.com/GeorgePapageorgakis/random-number-generator-period-detection/blob/master/Ri2.jpg)
 
+Of course, for different values of parameters and take different sequences of numbers with different periods.
+
 The purpose is to detect the period of a pseudorandom number generator. More specifically, given a linear generator remainder,
 it produces consecutive numbers of the sequence and as soon as it finds the first value that is equal to a previous value, it 
 stops and returns the number of steps intervening between these two same values. A key feature in this technique is to determine
