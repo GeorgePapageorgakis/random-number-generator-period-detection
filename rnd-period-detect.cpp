@@ -119,16 +119,16 @@ int findPeriod(int a, int c, int m, int x) {
 	
 	//repeat as long as we havent found a period
 	while(!period){
-	//generate the pseydo random value
-	rand_val = generate(a, c, m, rand_val);
-	
-	//search for the value in the hash table
-	period = searchElement(rand_val, ht, HTSIZE);
-	
-	//insert the sequence "random" value
-	//if period != 0 then rand_val already exist in hash table
-	if (!period)
-		counter += insertElement(rand_val, counter, ht, HTSIZE);
+		//generate the pseydo random value
+		rand_val = generate(a, c, m, rand_val);
+		
+		//search for the value in the hash table
+		period = searchElement(rand_val, ht, HTSIZE);
+		
+		//insert the sequence "random" value
+		//if period != 0 then rand_val already exist in hash table
+		if (!period)
+			counter += insertElement(rand_val, counter, ht, HTSIZE);
 	}
 	
 	//free memory
